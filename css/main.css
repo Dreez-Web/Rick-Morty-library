@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    font-family: "Exo 2", sans-serif;
+}
+.hero {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr; /* Ajuste para centrar mejor la imagen y el texto */
+    gap: 20px; /* Ajustado para acercar más la imagen al texto */
+    padding: 20px;
+    max-width: 1200px; /* Limita el ancho máximo de la sección hero */
+    margin: 0 auto; /* Centra la sección hero */
+}
+
+
+.imagen {
+    grid-column: 1;
+}
+
+.imagen img {
+    max-width: 100%;
+    border: solid black;
+    border-radius: 2rem;
+    transition: .5s;
+}
+
+.imagen img:hover {
+    background-color: greenyellow;
+    box-shadow: -5px 5px;
+    transform: translate(-1%, -.5%);
+}
+
+.text {
+    grid-column: 2;
+    text-align: left;
+}
+
+.text h1 {
+    margin-bottom: 10px; 
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+.text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 1rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.pagination {
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+}
